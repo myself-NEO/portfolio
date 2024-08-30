@@ -3,7 +3,7 @@ import "./App.css";
 import HomePage from "./components/HomePage";
 import { createTheme, CssBaseline, ThemeProvider } from "@mui/material";
 import Header from "./components/Header";
-import Footer from "./components/Footer";
+// import Footer from "./components/Footer";
 
 const theme = createTheme({
   typography: {
