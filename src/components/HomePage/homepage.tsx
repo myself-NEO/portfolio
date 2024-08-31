@@ -9,8 +9,11 @@ function Intro() {
   };
 
   const downloadCV = () => {
-    window.open("https://drive.google.com/file/d/1Sm0MEfR0izmn0SBXBHRgs_kDJPo65Onv/view?usp=sharing", "_blank");
-  }
+    window.open(
+      "https://drive.google.com/file/d/1Sm0MEfR0izmn0SBXBHRgs_kDJPo65Onv/view?usp=sharing",
+      "_blank"
+    );
+  };
 
   return (
     <>
@@ -22,7 +25,9 @@ function Intro() {
           />
         </div>
         <div className="description-con">
-          <span className="description">I do code and make content about it!</span>
+          <span className="description">
+            I do code and make content about it!
+          </span>
         </div>
         <div className="about">
           <span>
@@ -33,10 +38,21 @@ function Intro() {
           </span>
         </div>
         <div className="btn-con">
-          <Button className=" primary-btn btn-left" variant="contained" onClick={sendMail}>
+          <Button
+            className=" primary-btn btn-left"
+            variant="contained"
+            onClick={sendMail}
+          >
             Get in touch
           </Button>
-          <Button className="secondary-btn" variant="outlined" onClick={downloadCV}>
+          <Button
+            className="secondary-btn"
+            variant="outlined"
+            sx={{
+              borderColor: "#ffffff",
+            }}
+            onClick={downloadCV}
+          >
             Download CV
           </Button>
         </div>

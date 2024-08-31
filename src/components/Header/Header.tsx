@@ -67,7 +67,7 @@ const Header: React.FC = () => {
 
   return (
     <>
-      <AppBar position="static">
+      <AppBar position="fixed">
         <Toolbar sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
           {isMobile && (
             <IconButton
