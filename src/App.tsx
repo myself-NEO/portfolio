@@ -1,33 +1,21 @@
 import React from "react";
-import "./App.css";
-import HomePage from "./components/HomePage";
-import { createTheme, CssBaseline, ThemeProvider } from "@mui/material";
 import Header from "./components/Header";
-// import Footer from "./components/Footer";
-
-const theme = createTheme({
-  typography: {
-    fontFamily: 'sans-serif, "Arial"',
-  },
-  palette: {
-    primary: {
-      main: "#222222",
-    },
-    secondary: {
-      main: "#333333",
-    },
-  },
-});
+// import AppRoutes from "./components/Routes/AppRoutes";
+import { Route, Routes } from "react-router-dom";
+import HomePage from "./components/HomePage";
+import DsaPathway from "./components/DSApathway";
+import NotFound from "./components/Common";
 
 function App() {
   return (
     <>
-      <ThemeProvider theme={theme}>
-        <CssBaseline />
-        <Header />
-        <HomePage />
-        {/* <Footer /> */}
-      </ThemeProvider>
+      <Header />
+      {/* <AppRoutes /> */}
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/dsapathway" element={<DsaPathway />} />
+        <Route path="*" element={<NotFound />} />
+      </Routes>
     </>
   );
 }

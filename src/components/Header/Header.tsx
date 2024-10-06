@@ -43,7 +43,7 @@ const Header: React.FC = () => {
     >
       <img src={Sign} alt="Keshav Jha" />
       <List>
-        {["Home", "Exprience", "Projects", "Contacts"].map((text, index) => (
+        {["Home", "Exprience", "DSApathway", "Projects", "Contacts"].map((text, index) => (
           <ListItem key={text} disablePadding>
             <ListItemButton>
               <ListItemIcon style={{ color: "inherit" }}>
@@ -51,7 +51,7 @@ const Header: React.FC = () => {
                   <HomeIcon />
                 ) : index === 1 ? (
                   <WorkIcon />
-                ) : index === 2 ? (
+                ) : index === 3 ? (
                   <AssignmentIcon />
                 ) : (
                   <ContactMailIcon />
@@ -96,6 +96,9 @@ const Header: React.FC = () => {
               </IconButton>
               <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
                 Experience
+              </Typography>
+              <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+                DSApathway
               </Typography>
               <IconButton color="inherit">
                 <AssignmentIcon />
